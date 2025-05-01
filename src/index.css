@@ -1,0 +1,32 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: cornflowerblue;
+  border: 3px solid white;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: darkviolet;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.line{
+  width: 100%;
+  height: 30px;
+  background-color: rgb(90, 90, 232);
+  transform-origin: left;    /* so scroll start from left*/
+}
