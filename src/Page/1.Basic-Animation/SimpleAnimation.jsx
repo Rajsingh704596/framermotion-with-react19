@@ -30,12 +30,33 @@ function SimpleAnimation() {
             Hello Framer Motion!
           </motion.h1>
           {/* Explanation:
-initial → shuruat ki state
+                initial → shuruat ki state
 
-animate → final state jahan pahuchna hai
+                animate → final state jahan pahuchna hai
 
-transition → duration, easing etc. */}
+                transition → duration, easing etc. */}
         </div>
+      </div>
+      <br />
+
+      <h1>Progress Bar</h1>
+      <div
+        style={{
+          width: "100%",
+          height: 4,
+          backgroundColor: "rgba(255,255,255,0.1)",
+        }}
+      >
+        <motion.div
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 5, ease: "linear" }}
+          style={{
+            height: "100%",
+            backgroundColor: "#3b82f6", // Bright blue
+            transformOrigin: "left",
+          }}
+        />
       </div>
     </div>
   );

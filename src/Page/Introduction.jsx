@@ -32,6 +32,8 @@ const Introduction = () => {
             transition={{ duration: 3, delay: 1 }}
           ></motion.div>
 
+          <br />
+
           {/* Circle apply animate and transition*/}
           <motion.div
             className="circle"
@@ -39,7 +41,7 @@ const Introduction = () => {
             transition={{ duration: 4 }}
           ></motion.div>
 
-          <hr />
+          <br />
 
           {/* Initial Step and last step apply in Text */}
           <motion.h1
@@ -50,7 +52,7 @@ const Introduction = () => {
             Hello World
           </motion.h1>
 
-          <hr />
+          <br />
 
           {/* Basic Simple Animation using  */}
           <motion.h1
@@ -61,8 +63,11 @@ const Introduction = () => {
             Simple animation
           </motion.h1>
 
+          {/* Progress Bar */}
+
           <li>Creating Using Variants</li>
         </ol>
+
         <hr />
 
         <h1>Advance Animation</h1>

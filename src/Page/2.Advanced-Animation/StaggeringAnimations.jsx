@@ -5,8 +5,8 @@ const StaggeringAnimations = () => {
     visible: {
       opacity: 1,
       transition: {
-        // Stagger children animations by 0.1s
-        staggerChildren: 0.1,
+        // Stagger children animations by 0.5s
+        staggerChildren: 0.5,
       },
     },
   };

@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 
+// variants use
 const buttonVariants = {
   hover: {
     scale: 1.1,
@@ -14,7 +15,7 @@ const buttonVariants = {
   },
 };
 
-const HoverTapDrag = () => {
+const HoverAndTap = () => {
   return (
     <>
       <h1>Hover and Tap</h1>
@@ -33,16 +34,24 @@ const HoverTapDrag = () => {
       >
         Click Me
       </motion.button>
+      <br />
+
       <motion.button
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        whileHover={{
+          scale: 1.1,
+          backgroundColor: "palevioletred",
+          color: "white",
+          borderRadius: "0%",
+        }}
+        whileTap={{ scale: 0.9, borderRadius: "15%" }}
         style={{
           padding: "10px 20px",
           fontSize: "16px",
           marginTop: "20px",
+          cursor: "pointer",
         }}
       >
-        Click Me
+        Click Me 2
       </motion.button>
 
       <br />
@@ -50,4 +59,4 @@ const HoverTapDrag = () => {
   );
 };
 
-export default HoverTapDrag;
+export default HoverAndTap;

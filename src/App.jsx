@@ -1,7 +1,7 @@
 import "./App.css";
 import KeyframesAnimation from "./Page/2.Advanced-Animation/KeyframesAnimation";
 import StaggeringAnimations from "./Page/2.Advanced-Animation/StaggeringAnimations";
-import HoverTapDrag from "./Page/1.Basic-Animation/HoverTapDrag";
+import HoverAndTap from "./Page/1.Basic-Animation/HoverAndTap";
 import SimpleAnimation from "./Page/1.Basic-Animation/SimpleAnimation";
 import VariantsForCleanerCode from "./Page/1.Basic-Animation/VariantsForCleanerCode";
 import DragGestures from "./Page/3.Gestures & Interactions/DragGestures";
@@ -45,7 +45,7 @@ function App() {
       <br />
       <VariantsForCleanerCode />
       <br />
-      <HoverTapDrag />
+      <HoverAndTap />
       <br />
       {/* Advanced Animations */}
       <KeyframesAnimation />
