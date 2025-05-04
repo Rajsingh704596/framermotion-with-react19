@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div>navbar</div>
+      <div>Navbar Link</div>
       <nav>
         <li>
           <NavLink to="/home">Home</NavLink>
@@ -28,7 +28,12 @@ const AnimatePresenceCom = () => {
 
   return (
     <>
-      <button onClick={() => setShow(!show)}>Toggle</button>
+      <button
+        className="bg-blue-400 rounded-lg w-30 h-10"
+        onClick={() => setShow(!show)}
+      >
+        Toggle click
+      </button>
       <AnimatePresence>
         {show && (
           <motion.div

@@ -8,6 +8,7 @@ function ParallaxComponent() {
     offset: ["start start", "end start"], // Different from previous example
   });
 
+  // useTransform hook use scroll base parallax effect apply
   const y = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
   return (

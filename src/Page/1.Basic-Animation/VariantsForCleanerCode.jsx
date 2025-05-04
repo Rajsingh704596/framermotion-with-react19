@@ -1,3 +1,5 @@
+//! Variants - define one object and passing in motion.anyTag , so we can pass same animation on diff. tag ,so the code is more cleaner
+
 import { motion } from "motion/react";
 // Variants help organize animation states
 const boxVariants = {
@@ -51,6 +53,8 @@ function VariantsForCleanerCode() {
       >
         Box with Variants
       </motion.div>
+
+      <br />
     </>
   );
 }

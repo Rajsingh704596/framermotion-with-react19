@@ -7,7 +7,7 @@ import VariantsForCleanerCode from "./Page/1.Basic-Animation/VariantsForCleanerC
 import DragGestures from "./Page/3.Gestures & Interactions/DragGestures";
 import IntersectionObserver from "./Page/3.Gestures & Interactions/IntersectionObserver";
 import ScrollTriggeredAnimation from "./Page/4.Scroll-Animation/ScrollTriggeredAnimation";
-import ParallaxComponent from "./Page/4.Scroll-Animation/Scroll-linkedParallax";
+import ParallaxComponent from "./Page/4.Scroll-Animation/Scroll-LinkedParallax.jsx";
 import SharedElementTransition from "./Page/5.Layout-Animation/SharedElementTransition";
 import AutomaticLayoutAnimation from "./Page/5.Layout-Animation/AutomaticLayoutAnimations";
 import Introduction from "./Page/Introduction";
@@ -18,6 +18,14 @@ import { AnimatePresence } from "motion/react";
 import Home from "./Page/6.Route-Animation/Home";
 import About from "./Page/6.Route-Animation/About";
 import Navbar from "./Page/6.Route-Animation/navbar";
+import Button from "./components/button/Button";
+import Card from "./components/card/card";
+
+//
+import ScrollColorChange from "./components/motion-Hooks/ScrollColorChange.jsx";
+import LayoutNavbar from "./components/motion-Hooks/LayoutNavbar.jsx";
+import SequenceAnimation from "./components/motion-Hooks/SequenceAnimation.jsx";
+import PurchaseButton from "./components/motion-Hooks/PurchaseButton.jsx";
 
 function App() {
   const location = useLocation(); // part of react-router-dom   /// Now this works because BrowserRouter is at the root
@@ -77,6 +85,20 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </AnimatePresence>
+
+      <br />
+      {/* Using Tailwind css+ Motion */}
+      <Button />
+      <br />
+      <Card />
+      <br />
+      <ScrollColorChange />
+      <br />
+      <LayoutNavbar />
+      <br />
+      <SequenceAnimation />
+      <br />
+      <PurchaseButton />
     </>
   );
 }

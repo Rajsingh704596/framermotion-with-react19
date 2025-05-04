@@ -1,20 +1,13 @@
-* {
-  margin: 10px;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "tailwindcss";
 
-body {
-  background-color: black;
-  color: white;
-}
+
 
 .box {
   height: 100px;
   width: 100px;
   background-color: cornflowerblue;
   border: 3px solid white;
-}
+} 
 
 .circle {
   height: 100px;
@@ -29,4 +22,4 @@ body {
   height: 30px;
   background-color: rgb(90, 90, 232);
   transform-origin: left;    /* so scroll start from left*/
-}
+} 

@@ -49,6 +49,8 @@ const HoverAndTap = () => {
           fontSize: "16px",
           marginTop: "20px",
           cursor: "pointer",
+          backgroundColor: "pink",
+          color: "black",
         }}
       >
         Click Me 2

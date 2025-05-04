@@ -1,5 +1,11 @@
+//!  Animation Orchestration :- here using variants and staggering apply(jo ek k baad ek aata hai animation children k liye)
+//@  Note- staggerChildren always apply parent div , for his children animation show  like map loop time ul pr variant k through stagger effect apply so all li child uss animation pr based honge
+
+//# Orchestration - it means outer div pr hover kar rhe hai to inner div pr animation hota hai
+
 import { motion } from "motion/react";
 const StaggeringAnimations = () => {
+  // variants define
   const container = {
     hidden: { opacity: 0 },
     visible: {
