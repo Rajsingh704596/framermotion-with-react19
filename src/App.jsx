@@ -26,6 +26,7 @@ import ScrollColorChange from "./components/motion-Hooks/ScrollColorChange.jsx";
 import LayoutNavbar from "./components/motion-Hooks/LayoutNavbar.jsx";
 import SequenceAnimation from "./components/motion-Hooks/SequenceAnimation.jsx";
 import PurchaseButton from "./components/motion-Hooks/PurchaseButton.jsx";
+import Image from "./components/image-card animation/image.jsx";
 
 function App() {
   const location = useLocation(); // part of react-router-dom   /// Now this works because BrowserRouter is at the root
@@ -99,6 +100,8 @@ function App() {
       <SequenceAnimation />
       <br />
       <PurchaseButton />
+      <br />
+      <Image />
     </>
   );
 }
